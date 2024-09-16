@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## [Unreleased]
+## [2024.09.16]
+
+### Added
+
+- Designed a Concert Setlist component
+- Designed a Playing Cards component
+- Designed a Weather Tracker component
 
 ## [2024.08.07]
 

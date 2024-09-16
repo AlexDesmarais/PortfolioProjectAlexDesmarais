@@ -1,12 +1,11 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Alex Desmarais
+- **Dot Number**: desmarais.17
+- **Due Date**: 9/16 @ 12:40pm
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +28,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,8 +50,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -67,7 +63,6 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -98,23 +93,17 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+
+Talking about my personal interests I like music, games, and reading. I would like to do something with music as I was a band kid, I like going to concerts, and discovering new music in general. I'd also like to do something with games like catalogueing a specific series or modeling a card game. I think these ideas are more than enough to give me a launch point for this project.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -124,7 +113,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -192,71 +180,95 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Concert Setlist
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models the setlist of a band/artist for a performance, concert, etc
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - addSong() - adds song to setlist
+    - removeSong() - remoces song from setlist
+    - getSetlist() - returns current setlist
+    - getSongCount() - returns number of songs in setlist
+    - moveSong() - moves a song from one position in the set to another
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - findSong() - finds a song via keyword or full title
+    - getSongAt() - returns song at a specific position in setlist
+    - clearSetlist() - removes all songs from setlist
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes it will be as songs need to be moved and rearranged in the list, and adjust for different performances.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Possibly, haven’t fully explored if so yet.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Maybe for genres, etc, but no real “category” constants. Maybe if its a commonly played song in the set or for the artist.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, findSong can be implemented by iterating what’s returned by
+getSetlist.
 
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Playing Cards
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models and holds details of a deck of playing cards, able to draw, shuffle, etc
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - shuffle() - shuffles deck but no print output
+    - drawCard() - draws the top card of deck and "removes" it
+    - getCardCount() - returns how many cards currently in deck
+    - addCard() - adds a card to deck
+    - createDeck() - creates a random ordered 52 card deck
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - peekTopCard() - tells user the top card without removing it
+    - deckIsEmpty() - checks if the deck is empty
+    - dealHand() - deals cards to a set amount of "people" evenly or by a specific amount
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes because needs to change as cards removed and added.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes card would have to be its own class likely.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, suits and numbers would heavily incorporate constants for them.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, peekTopCard can be implemented by calling drawCard but don’t
+remove the card from the deck.
 
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Weather Tracker
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Tracks weather conditions for a given day like rain, temperature, etc.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - setTemperature() - set current temperature
+    - setRainfall() - set current rainfall
+    - setHumidity() - set current humidity
+    - getTemperature() - return current temperature
+    - getRainfall() - return current rainfall count
+    - getHumidity() - return current humidity
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - getWeatherSummary() - returns a summary of current conditions (condition and temperature)
+    - isRainyWarning() - checks if the rainfall meets a warning level threshold
+    - isHotWarning() - checks if the temperature meets a warning level threshold but upper
+    - isColdWarning() - checks if the temperature meets a warning level threshold but lower
+    - isHumidWarning() - checks if humidity meets a warning level threshold
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, weather conditions change constantly over time so would need to
+be to track accurately and for my idea.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, runs off a lot of number based variables mostly doubles.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Constants for conditions like, rainy, sunny, cloudy at most.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
-
+      - Yes, isRainyWarning() would be implemented using getRainfall and
+      checking the threshold it provides.
 ## Post-Assignment
 
 The following sections detail everything that you should do once you've
@@ -264,7 +276,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -303,7 +314,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -313,11 +323,9 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -344,7 +352,6 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
