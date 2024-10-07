@@ -10,6 +10,13 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
+- Designed a proof of concept for ConcertSetlist component
+- Showed all of the basic methods other than moveSong, findSong, and getSongAt
+
+## [2024.09.16]
+
+### Added
+
 - Designed a Concert Setlist component
 - Designed a Playing Cards component
 - Designed a Weather Tracker component
