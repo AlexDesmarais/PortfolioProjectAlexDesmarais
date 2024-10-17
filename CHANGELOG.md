@@ -6,7 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## [2024.09.16]
+
+## [2024.10.16]
+
+### Added
+
+- Designed interfaces for ConcertSetlist component
+- Created a kernel and extended interface
+
+### Changed
+- Included moveSong, findSong, and getSongAt
+
+
+## [2024.10.02]
 
 ### Added
 
