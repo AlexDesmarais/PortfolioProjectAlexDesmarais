@@ -29,6 +29,31 @@ public class ConcertSetlist {
         this.setlist.clear();
     }
 
+    public void moveSong(int fromIndex, int toIndex) {
+        if (fromIndex >= 0 && fromIndex < this.setlist.size() && toIndex >= 0
+                && toIndex < this.setlist.size()) {
+            String song = this.setlist.remove(fromIndex);
+            this.setlist.add(toIndex, song);
+        }
+    }
+
+    public int findSong(String keyword) {
+        for (int i = 0; i < this.setlist.size(); i++) {
+            if (this.setlist.get(i).toLowerCase()
+                    .contains(keyword.toLowerCase())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public String getSongAt(int index) {
+        if (index >= 0 && index < this.setlist.size()) {
+            return this.setlist.get(index);
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         ConcertSetlist mySetlist = new ConcertSetlist();
         mySetlist.addSong("Song 1");
